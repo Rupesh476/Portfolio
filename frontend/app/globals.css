@@ -3,3 +3,14 @@
 * {
   font-family: Outfit;
 }
+
+
+/* Hide scrollbar but allow scrolling */
+.scroll-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.scroll-hide {
+  -ms-overflow-style: none;  /* IE, Edge */
+  scrollbar-width: none;     /* Firefox */
+}
