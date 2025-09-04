@@ -142,9 +142,9 @@ const Works = () => {
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView={{scale:1, opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
+        transition={{  duration: 0.5 }}
         className="bg-rose-50 dark:bg-rose-900/50 rounded-xl py-8 px-6 mt-8 sm:px-8 text-center max-w-4xl mx-auto"
       >
         <h2 className="text-2xl sm:text-3xl font-semibold mb-3 text-black dark:text-white">

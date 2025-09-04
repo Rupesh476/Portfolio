@@ -111,9 +111,9 @@ const Header = () => {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="flex-1 flex justify-center"
         >
-          <div className="relative w-72 h-72">
+          <div className="relative w-75 h-90">
             <Image
-              src="/IMG20250829100219.jpg"
+              src="/Picsart_25-09-04_20-58-51-408.jpg"
               alt="Profile"
               fill
               className="rounded-full object-cover border-4 border-red-500 shadow-[0_20px_50px_rgba(0,0,0,0.3)] hover:scale-105 transition-transform duration-300"

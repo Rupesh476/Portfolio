@@ -99,10 +99,10 @@ const Services = () => {
       className="w-full  px-4 sm:px-8 md:px-12 lg:px-[12%] py-16 scroll-mt-20 bg-gradient-to-b from-white to-gray-100 dark:from-gray-950 dark:to-gray-900 text-gray-900 dark:text-gray-100 transition-colors"
     >
       <motion.header
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{scale:0.2, opacity: 0, y: -20 }}
+        whileInView={{ scale:1, opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
+        transition={{delay:0.2, duration: 0.5 }}
         className="max-w-3xl mx-auto text-center mb-12"
       >
         <h1 className="text-lg font-medium uppercase text-gray-600 dark:text-gray-400 mb-1 tracking-wider">
@@ -122,10 +122,10 @@ const Services = () => {
           <motion.div
             key={index}
             variants={cardVariants}
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{scale:0, opacity: 0, y: -5 }}
+            whileInView={{scale:1, opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{delay:0.2, duration: 0.5 }}
             whileHover="hover"
             className="relative bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow cursor-pointer flex flex-col"
             aria-label={service.title}

@@ -77,16 +77,17 @@ const About = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          whileHover={{ scale: 1.05, rotate: 2 }}
+          whileHover={{ scale: 1.05, rotate: 1 }}
           className="w-64 sm:w-80 rounded-3xl overflow-hidden shadow-xl border-4 border-red-500/20 dark:border-red-500/30"
         >
-          <Image
-            src="/IMG20250825201025.jpg"
+          <div className='relative w-64 sm:w-80 h-105 rounded-3xl overlow-hidden'>
+            <Image
+            src="/Picsart_25-09-04_21-05-12-140.jpg"
             alt="Rupesh Sah"
-            width={320}
-            height={100}
-            className="w-full rounded-3xl object-cover transition-transform duration-300"
+            fill
+            className=" object-cover rounded-3xl"
           />
+          </div>
         </motion.div>
 
         {/* Description */}
@@ -133,8 +134,8 @@ const About = () => {
 
       {/* Skills Grid */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{scale:0.1, opacity: 0 }}
+        animate={{ scale:1, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.4 }}
         className="grid mt-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
       >
